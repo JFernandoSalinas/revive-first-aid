@@ -1,0 +1,373 @@
+/*----MENU STYLING----*/
+ul#desktop-menu{
+    float: right;
+}
+div#website-logo {
+    padding-top: 5px;
+}
+a.sf-with-ul:after {
+    border-top-color: #0a2a3a !important;
+    margin-top: 3px !important;
+}
+/*Menu Link styling and hover effect */
+
+ul#desktop-menu > li > a{
+    text-transform: uppercase;
+    position: relative;
+    color:#0a2a3a;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 500;
+  }
+
+ul#desktop-menu>li:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0a2a3a;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#sub-menu>li:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0a2a3a;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+ul#desktop-menu>li:hover:before {
+   visibility: visible;
+   -webkit-transform: scaleX(1);
+   transform: scaleX(1);
+}
+#sub-menu>li:hover:before {
+   visibility: visible;
+   -webkit-transform: scaleX(1);
+   transform: scaleX(1);
+}
+#sub-menu>li:hover{
+    background-color: #0a2a3a;
+}
+
+ul#desktop-menu {
+    margin-top: 3%;
+}
+ul#desktop-menu > li >a {
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+/*----Header Image Styling----*/
+.main-header-img{
+    background-color: #f9f9fa;
+    background-image: url(../images/jason-blackeye-261145-unsplash-min.jpg);
+    background-size: cover;
+    background-position: center ;
+    padding: 15em 0;
+    background-attachment: fixed;
+    border-bottom: solid 2px #0a2a3a;
+    z-index: 5;
+    height: 100%;
+    position: relative;
+}
+
+.main-header-img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0,0,0,.20);
+    z-index: 4;
+  }
+/*Header title and description styling*/
+#header-img-content{
+    position: relative;
+    z-index: 6;
+    color: #fff;
+    text-align: center;
+}
+h1.home-title{
+    text-align: center;
+    color: #fff
+}
+
+p.home-title-desc{
+    text-align: center;
+    color: #fff
+}
+/*-----Course Images Styling and Hover-----*/
+.course-image{
+    position: relative;
+    width: 100%;
+}
+.course-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.course-title{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(10, 42, 58, .45);
+}
+.course-image:hover .course-title{
+    opacity: 1;
+}
+.course-image h5{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.course-image.col-lg-4 {
+    margin: 15px 0;
+}
+@media only screen and (min-width: 768px) {
+    .course-image.col-lg-4 {
+        padding: 0 !important;
+        margin: 15px 10px !important;
+        max-width: 100% !important;
+    }
+}
+@media only screen and (min-width: 893px) {
+    .course-image.col-lg-4 {
+        padding: 0 !important;
+        margin: 0 10px !important;
+        max-width: 31.2% !important;
+    }
+} 
+@media only screen and (min-width: 1080px) {
+    .course-image.col-lg-4 {
+        padding: 0 !important;
+        margin: 0 10px !important;
+        max-width: 31.5% !important;
+    }
+}  
+/*-----Book a Course Styling------*/
+span#book-form-blurb > p{
+    text-align: center;
+    line-break: 20px;
+    font-size: 16px;
+    margin-top: 0px;
+}
+/*-----Featured Image Styling-----*/
+.feature-callout-cover{
+    background:url("../images/626064.jpg");
+    background-size: cover;
+    background-position: center;  
+    background-attachment: fixed;
+}
+.home-featured-image-content{
+    margin:0 auto;
+    padding-top: 12em;
+    padding-bottom: 12em;
+    width: 90%;
+    color:#fff;
+}
+.home-featured-image-content p{
+   font-size: 18px;
+   margin-top: 50px;
+}
+/*----Content Area Styling----*/
+.con-area{
+    padding: 5em 0;
+}
+.con-title{
+    text-align: center;
+    line-height: 1.5;
+}
+.line-divide{
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+.line-divide .line{
+    width: 40px;
+    height: 3px;
+    background-color: #444;
+    position: relative;
+    margin: 0 auto;
+}
+
+/*----About Us Content Styling----*/
+
+/*-----Line Divide(JUST FOR FUN----*/
+
+.main-line-divide .main-line{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    margin: 0 auto;
+}
+/* ---- Courses Area Styling ----*/
+aside#courses-area {
+    background: whitesmoke;
+}
+#courses-area img {
+    width: 100%;
+}
+/*------Connect With Us Area------*/
+div#cwu-direct {
+    margin-left: 20%;
+    color: white;
+}
+h3.con-footer-title {
+    text-align: center;
+    color: white;
+}
+h3.con-footer-title {
+    text-align: center;
+    color: white;
+}
+.footer-bg-color{
+   background-color:  #0a2a3a
+}
+.line-divide .footer-line{
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto;
+}
+p.cwu-btn {
+    margin: auto;
+    padding: 10px 10px;
+    border: 2px solid white;
+    width: 50%;
+    font-weight: 600;
+}
+div#cwu-btn-area p {
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+}
+p.cwu-btn:hover {
+    background: white;
+    color: #0a2a3a !important;
+}
+div#cwu-direct h4 {
+    margin-bottom: 10px;
+}
+div#cwu-direct p {
+    font-size: 18px;
+}
+/*----Footer Area ----*/
+footer.site-footer {
+    padding: 1%;
+    padding-top: 2%;
+}
+
+footer.site-footer p {
+    text-align: center;
+    color: #fff;
+}
+.footer-line-divide{
+    padding-bottom: 25px;
+}
+.footer-line-divide .footer-line{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto;
+}
+.footer-social > p {
+    margin-right: 5%;
+    font-size: 2em;
+}
+.footer-social i {
+    margin-right: 3%;
+}
+.footer-copyright {
+    margin-top: 10px;
+}
+
+/*----------------------------------------------ABOUT US PAGE---------------------------------------------------*/
+
+
+/*----------------------------------------------COURSE PAGES----------------------------------------------------*/
+
+
+/*------------------------------------------CONTACT US PAGE----------------------------------------------------*/
+
+
+
+/*----tag and class overriding----*/
+hr{
+    border-top: 1px solid rgba(0,0,0,.4);
+}
+a.carousel-control-next, a.carousel-control-prev {
+    background: #0a2a3a;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0a2a3a;
+    border-color: #0a2a3a;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #185e82;
+    border-color: #185e82;
+}
+* {
+    font-family: 'Lora', serif;
+}
+h1, h2, h3, h4, h5{
+    font-family: 'Open Sans', sans-serif;
+}
+span.fa.fa-clock-o:after {
+    content: 'SELECT A TIME' !important;
+    color: #0a2a3a;
+}
+span.fa.fa-calendar:after{
+    color: #0a2a3a; 
+}
+span.fa.fa-arrow-up:after{
+    color: #0a2a3a; 
+} 
+span.fa.fa-arrow-down:after{
+    color: #0a2a3a; 
+} 
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-dec{
+    color: #fff;
+    text-decoration: none;
+}
+.sf-menu ul li {
+    background: #fff;
+    border-top: solid #0a2a3a 1px;
+    border-bottom: solid #0a2a3a 1px;
+}

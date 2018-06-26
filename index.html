@@ -1,9 +1,328 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
     <head>
+            <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+            <!-- link to the CSS files for Bootstrap -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0/css/tempusdominus-bootstrap-4.min.css" />
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+            
+            <!-- link to the CSS files for this menu type -->
+            <link href="resources/superfish/css/superfish.css" rel="stylesheet" media="screen">
+            <link href="css/style.css" rel="stylesheet" media="screen">
+            <link rel="stylesheet" href="resources/font-awesome/css/all.css">
 
+            <!--Google Fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+            <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+            <script>
+                window.sr = ScrollReveal({ reset: true,duration: 1000 });
+            </script>
     </head>
     <body>
-        
+        <div id='wrap'>
+            <div id='header'>
+                <div id='nav-container' class='container'>
+                    <div class='row'>
+                        <div class='col-xs-8 col-sm-9 col-md-3'>
+                            <div id='website-logo'>
+                                <img width="258" height="70" src="images/DoroPMLogo.png" class="custom-logo" alt="Revive First Aid" itemprop="logo">
+                            </div>
+                        </div>
+                        <div class='col-xs-4 col-sm-3 col-md-9'>
+                            <nav id='site-nav-links'>
+                                <ul id='desktop-menu' class='sf-menu sf-js-enabled sf-arrows'style="touch-action: pan-y;">
+                                    <li>
+                                        <a href="/home/">Home</a>
+                                    </li>
+                                    <li class='li-transparent'>
+                                        <a class='sf-with-ul'>Courses</a>
+                                        <ul id='sub-menu'>
+                                            <li class='sub-li'><a href="/courses/course1">Emergency First Aid and CPR-B</a></li>
+                                            <li><a href="/courses/course2">Standard First Aid and CPR-C</a></li>
+                                            <li><a href="/courses/course3">Standard First Aid and CPR-C Recert</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/about-us">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="/contact">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Page Body Content-->
+
+        <div id='home-content'>
+            <!--Header Image Banner-->
+            <div class='header-hero-background'>
+                <div class='main-header-img'>
+                    <div class='container' id='cover-container'>
+                        <div class='col-xs-12' id='header-img-content'>
+                            <h1 class='home-title'>BEST FIRST AID SERVICE</h1>
+                            <p class='home-title-desc'>Proudly serving the Greater Toronto Area</p>
+                            <hr class="my-4">
+                            <p>Quality on Location First Aid and CPR Training</p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Main Content Area-->
+
+            <!--About Us Area-->
+            <aside id='about-us' class='con-area'>
+                <div class='container'>
+                    <h3 class='con-title'>ABOUT US</h3>
+                    <div class='line-divide'>
+                        <div class='line'></div>
+                    </div>
+                    <div id='au-content'>
+                        <div class='row'>
+                            <div class='col-md-6'>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus magna, malesuada porta elementum vitae, hendrerit sed nunec ut placerat odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus magna, malesuada porta elementum vitae, hendrerit sed nunec ut placerat odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus magna, malesuada porta elementum vitae, hendrerit sed nunec ut placerat odio.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus magna, malesuada porta elementum vitae.<br/> <br/> 
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus magna, malesuada porta elementum vitae, hendrerit sed nunec ut placerat odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus magna, malesuada porta elementum vitae, hendrerit sed nunec ut placerat odio.
+                                </p>
+                            </div>    
+                            <div class='col-md-6'>
+                                <a href="http://www.lifesavingsociety.com/">
+                                    <img style='width:100%;'src='images/lslogoengcolwithreg.jpg'>
+                                </a>    
+                            </div>    
+                        </div>
+                    </div>   
+                </div>
+            </aside>
+             
+            <!--Courses Area-->
+            <aside id='courses-area' class='con-area'>
+                <div class='container'>
+                    <h3 class='con-title'>COURSES</h3>
+                    <div class='line-divide'>
+                        <div class='line'></div>
+                    </div>
+                    <div id='courses-content'>
+                        <div class='row'>
+                                <div class='course-image col-lg-4'>
+                                    <img src='images/first-aid-850489_1920.jpg'>
+                                    <a href='#'>
+                                        <div class='course-title'>
+                                            <h5>Emergency First Aid and CPR-B</h5>
+                                        </div></img>
+                                    </a>    
+                                </div>   
+                                <div class='course-image col-lg-4'>
+                                        <img src='images/first-aid-850486_1920.jpg'>
+                                        <a href='#'>
+                                            <div class='course-title'>
+                                                <h5>Standard First Aid and CPR-C</h5>
+                                            </div>
+                                        </a>
+                                </div> 
+                                <div class='course-image col-lg-4'>
+                                    <img src='images/first-aid-850485_1920.jpg'>
+                                    <a href='#'>
+                                        <div class='course-title'>
+                                            <h5>Standard First Aid and CPR-C Recert</h5>
+                                        </div>
+                                    </a>    
+                                </div>    
+                        </div>
+                    </div>   
+                </div>
+            </aside>
+                <!--Featured Image Area-->
+            <aside id='home-featured-image-area'>
+                <div class='feature-callout'>
+                    <div class='feature-callout-cover'>
+                        <div class='container'>
+                            <div class='row'>
+                                <div class='col-xs-12 home-featured-image-content'>
+                                    <h2 class='con-title'>BOOK A COURSE</h2>
+                                    <span id='book-form-blurb'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></span>
+                                    <form id='book-form' class='book-form'>
+                                        <div class='row'>
+                                            <div class='form-group col'>
+                                                <input  type="text" class="form-control" id="booking-form-orgname" placeholder="Organization Name">
+                                            </div>
+                                            <div class='form-group col'>
+                                                <input  type="text" class="form-control" id="booking-form-orgtype" placeholder="Organization Name">
+                                            </div>
+                                        </div>
+                                        <div class='row'>
+                                            <div class='form-group col'>
+                                                <input  type="text" class="form-control" id="booking-form-conname" placeholder="Contact Name">
+                                            </div>
+                                            <div class='form-group col'>
+                                                <select id="booking-form-participants" class="form-control">
+                                                    <option selected>Number of Participants</option>
+                                                         <option>3-5</option>
+                                                         <option>5-10</option>
+                                                         <option>10-16</option>
+                                                         <option>16+</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class='row'>
+                                            <div class='form-group col'>
+                                                <input type="email" class="form-control" id="booking-form-email" placeholder="Email Address"> 
+                                            </div>
+                                            <div class='form-group col'>
+                                                <input type="text" class="form-control bfh-phone"id="booking-form-phone" data-format="(ddd) ddd-dddd" placeholder="Phone Number">
+                                            </div>
+                                        </div>    
+                                        <div class='row'>
+                                            <div class='form-group col'>
+                                                <select id="booking-form-course" class="form-control">
+                                                    <option selected>Courses</option>
+                                                        <option>Emergency First Aid and CPR-B</option>
+                                                        <option>Standard First Aid and CPR-C</option>
+                                                        <option>Standard First Aid and CPR-C Recert</option>
+                                                </select>
+                                            </div>
+                                            <div class='form-group col'>
+                                                <div class="input-group date" id="datetimepicker" data-target-input="nearest">
+                                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker" placeholder="Preferred Date/Time"/>
+                                                        <div class="input-group-append" data-target="#datetimepicker" data-toggle="datetimepicker">
+                                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                        </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <script type="text/javascript">
+                                            $(function () {
+                                                $('#datetimepicker').datetimepicker();
+                                            });
+                                        </script>
+                                        <div class='row'>
+                                            <div class='form-group col'>
+                                                <textarea  type="text" class="form-control" id="booking-form-message" rows='4'placeholder="Your Message"></textarea>
+                                            </div>    
+                                        </div>
+                                        <div class="col-md-12 text-center"> 
+                                            <input  type="submit" class="btn-lg btn-primary mb-2"></button>
+                                        </div>    
+                                    </form>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!--Testimonials Area-->
+            <aside id='testimonials-area' class='con-area'>
+                <div class='container'>
+                    <h3 class='con-title'>WHAT OUR PARTICIPANTS SAY</h3>
+                    <div class='line-divide'>
+                        <div class='line'></div>
+                    </div>
+                    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+                        
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class='col-md-10 offset-md-1'>
+                                <p style='text-align:center;'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus magna, malesuada porta elementum vitae."</p>
+                                <p style='text-align:center;font-size: 12px;'>--Fernando Salinas--</p>
+                            </div>   
+                        </div>
+                        <div class="carousel-item">
+                            <div class='col-md-10 offset-md-1'>
+                                <p style='text-align:center;'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus magna, malesuada porta elementum vitae."</p>
+                                <p style='text-align:center;font-size: 12px;'>--Jo Bonnet--</p>
+                            </div>  
+                        </div>
+                        <div class="carousel-item">
+                            <div class='col-md-10 offset-md-1'>
+                                <p style='text-align:center;'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus magna, malesuada porta elementum vitae."</p>
+                                <p style='text-align:center;font-size: 12px;'>--Jo Bonnet--</p>
+                            </div>    
+                        </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>  
+                </div>
+            </aside>
+            <!--Connect With Us-->
+            <aside id=connect-with-us class='footer-bg-color con-area'>
+                <div class='container'>
+                    <h3 class='con-footer-title'>CONNECT WITH US</h3>
+                    <div class='line-divide'>
+                        <div class='footer-line'></div>
+                    </div>
+                    <div id=cwu-content>
+                            <div class='row'>
+                                <div class='col-md-6'>
+                                    <div id='cwu-contact-details'>
+                                        <div id='cwu-direct'>
+                                                <h4>Conect With Us For More Information </h4>
+                                                <p ><i style="font-size: 1.3em" class="far fa-envelope-open">&nbsp;</i>Email: <a class='link-dec' href='mailto:info@revivefirstaid.com'> info@revivefirstaid.com </a></p>
+                                                <p ><i style="font-size: 1.3em"class="fas fa-phone"></i>&nbsp;Call Us: <a class='link-dec' href='tel:#'> 647-123-1267</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='col-md-6'>
+                                    <div id='cwu-btn-area'>
+                                        <p class='cwu-btn'>Contact Us</p>
+                                        <p>Let us know if you have any questions!</p>
+                                    </div>
+                                </div>    
+                            </div>            
+                        </div>
+                </div>
+            </aside>
+        </div>   
+        <footer class="site-footer footer-bg-color">
+            <div class='container'>
+                <div class='footer-line-divide'>
+                    <div class='footer-line'></div>
+                </div>
+                <div class="site-info row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class='footer-copyright'>
+                            <p>	&copy;COPYRIGHT 2018 |
+                                <a class='link-dec' href="#"> ReviveFirstAid.com </a>
+                                | ALL RIGHTS RESERVED
+                            </p>
+                        </div>   
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class=footer-social>
+                            <p><i class="fab fa-facebook-square"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter-square"></i></p>
+                        </div>
+                </div>
+                </div>
+            </div>    
+        </footer>
     </body>
+       <!--scripts for the website-->
+       <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+       <script src="resources/superfish/js/jquery.js"></script>
+       <script src="resources/superfish/js/hoverIntent.js"></script>
+       <script src="resources/superfish/js/superfish.js"></script>
+       <script src="js/scripts.js"></script>
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0/js/tempusdominus-bootstrap-4.min.js"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+       <script>//sr.reveal('.col-md-4',{viewOffset: { top: 500, right: 500, bottom: 0, left: 0 },origin: 'top',scale: 0.5,duration: 1000,distance:'100px'});</script>
+       <script>sr.reveal('.col-md-6');
+       sr.reveal('#testimonials-area');
+       $('.carousel').carousel({
+        interval: 10000
+      })
+       </script>
+     
 </html>
